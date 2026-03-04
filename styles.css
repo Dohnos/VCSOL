@@ -8,6 +8,7 @@
   --primary: #5b8cff;
   --primary-dark: #3c70eb;
   --radius: 14px;
+  --header-height: 72px;
 }
 
 * {
@@ -42,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 72px;
+  min-height: var(--header-height);
 }
 
 .logo {
@@ -217,19 +218,26 @@ h1 {
 
   .nav {
     position: absolute;
-    top: 72px;
+    top: var(--header-height);
     right: 4%;
     flex-direction: column;
     width: min(220px, 80vw);
     padding: 1rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    background: #111a32;
-    display: none;
+    background: var(--surface);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-6px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
   .nav.open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 
   .contact {
