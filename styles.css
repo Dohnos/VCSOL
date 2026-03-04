@@ -64,11 +64,6 @@ h1, h2, h3 {
   50% { opacity: 0.5; }
 }
 
-@keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-}
-
 .animate-in {
   animation: fadeInUp 0.7s ease forwards;
 }
@@ -156,7 +151,12 @@ h1, h2, h3 {
   color: var(--primary);
 }
 
-.nav a:hover::after {
+.nav a.active {
+  color: var(--primary);
+}
+
+.nav a:hover::after,
+.nav a.active::after {
   width: 100%;
 }
 

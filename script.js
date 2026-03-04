@@ -55,9 +55,9 @@ function highlightNav() {
     const id = section.getAttribute("id");
     if (scrollY >= top && scrollY < top + height) {
       navLinks.forEach((link) => {
-        link.style.color = "";
+        link.classList.remove("active");
         if (link.getAttribute("href") === "#" + id) {
-          link.style.color = "var(--primary)";
+          link.classList.add("active");
         }
       });
     }
