@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderní web | VCSOL</title>
+    <meta
+      name="description"
+      content="Moderní prezentační web se sekcemi o službách, projektech a kontaktech."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header" id="top">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top">VCSOL</a>
+        <button class="menu-toggle" aria-label="Otevřít menu" aria-expanded="false">
+          ☰
+        </button>
+        <nav class="nav">
+          <a href="#about">O nás</a>
+          <a href="#services">Služby</a>
+          <a href="#projects">Projekty</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Modernizace webu</p>
+            <h1>Elegantní a rychlý web pro současné potřeby</h1>
+            <p class="hero-text">
+              Připravili jsme moderní rozložení, responzivní design a přehledné sekce,
+              které lépe prezentují vaše služby a usnadňují kontakt.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Nezávazná konzultace</a>
+              <a class="btn btn-secondary" href="#projects">Ukázky práce</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Co získáte</h2>
+            <ul>
+              <li>Moderní vizuál a čitelnou typografii</li>
+              <li>Responzivní zobrazení na mobilech i desktopu</li>
+              <li>Jasnou strukturu obsahu a sekcí</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <h2>O nás</h2>
+          <p>
+            Jsme tým zaměřený na kvalitní webovou prezentaci. Spojujeme čistý design,
+            výkon a důraz na uživatelský zážitek.
+          </p>
+        </div>
+      </section>
+
+      <section class="section alt" id="services">
+        <div class="container">
+          <h2>Služby</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Webdesign</h3>
+              <p>Tvorba moderních UI layoutů s důrazem na konverzi a čitelnost.</p>
+            </article>
+            <article class="card">
+              <h3>Frontend vývoj</h3>
+              <p>Rychlé a responzivní stránky v čistém HTML, CSS a JavaScriptu.</p>
+            </article>
+            <article class="card">
+              <h3>Optimalizace</h3>
+              <p>Zlepšení výkonu, přístupnosti a celkové uživatelské zkušenosti.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <h2>Vybrané projekty</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Firemní microsite</h3>
+              <p>Modernizace původního old-school webu do čistého současného stylu.</p>
+            </article>
+            <article class="card">
+              <h3>Produktová landing page</h3>
+              <p>Přehledná struktura sekcí a CTA prvky s jasnou navigací.</p>
+            </article>
+            <article class="card">
+              <h3>Portfolio stránka</h3>
+              <p>Vizuálně výrazná prezentace referencí a zákaznických výsledků.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="contact">
+        <div class="container contact">
+          <div>
+            <h2>Kontakt</h2>
+            <p>Chcete i vy moderní web? Ozvěte se a navrhneme ideální řešení.</p>
+          </div>
+          <a class="btn btn-primary" href="mailto:info@vcsol.cz">info@vcsol.cz</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> VCSOL. Všechna práva vyhrazena.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
