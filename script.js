@@ -1,3 +1,14 @@
+/* ==== Page Hero Scroll Arrow ==== */
+const pageHeroScroll = document.querySelector(".page-hero-scroll");
+if (pageHeroScroll) {
+  pageHeroScroll.addEventListener("click", () => {
+    const heroSection = document.querySelector(".hero");
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+}
+
 /* ==== Mobile Menu ==== */
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
