@@ -3,33 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VCSOL | Opravy a renovace veteránů</title>
-    <meta
-      name="description"
-      content="Profesionální opravy, renovace a restaurování historických veteránů. Vdechneme nový život vašemu klasickému vozu."
-    />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>VCSOL | Opravy a renovace veteránů — Profesionální restaurování klasických automobilů</title>
+    <meta name="description" content="Profesionální opravy, renovace a restaurování historických veteránů v České republice. Více než 20 let zkušeností, 350+ renovovaných vozů. Nezávazná konzultace zdarma." />
+    <meta name="keywords" content="renovace veteránů, opravy historických automobilů, restaurování klasických vozů, veterán opravna, Praha, repase motoru, karoserie veterána, lakýrnické práce, opravy interiérů veteránů" />
+    <meta name="author" content="VCSOL" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.vcsol.cz/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.vcsol.cz/" />
+    <meta property="og:title" content="VCSOL | Profesionální renovace historických veteránů" />
+    <meta property="og:description" content="Více než 20 let vdechujeme nový život historickým vozidlům. Kompletní renovace, opravy motorů, lakýrnické práce. Nezávazná konzultace zdarma." />
+    <meta property="og:image" content="https://i.postimg.cc/V6kXsFjr/1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Renovovaný historický veterán z dílny VCSOL" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:site_name" content="VCSOL" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VCSOL | Profesionální renovace historických veteránů" />
+    <meta name="twitter:description" content="Více než 20 let vdechujeme nový život historickým vozidlům. Kompletní renovace, opravy motorů, lakýrnické práce." />
+    <meta name="twitter:image" content="https://i.postimg.cc/V6kXsFjr/1.jpg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Font Awesome 6 Free -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "VCSOL",
+      "description": "Profesionální opravy, renovace a restaurování historických veteránů. Více než 20 let zkušeností v České republice.",
+      "url": "https://www.vcsol.cz",
+      "telephone": "+420123456789",
+      "email": "info@vcsol.cz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Průmyslová 42",
+        "addressLocality": "Praha 5",
+        "addressRegion": "Praha",
+        "postalCode": "150 00",
+        "addressCountry": "CZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "50.0594881",
+        "longitude": "14.3681989"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "image": "https://i.postimg.cc/V6kXsFjr/1.jpg",
+      "priceRange": "$$",
+      "foundingDate": "2004"
+    }
+    </script>
   </head>
   <body>
     <header class="header" id="top">
       <div class="container nav-wrap">
         <a class="logo" href="#top">
-          <span class="logo-icon">🏁</span> VCSOL
+          <i class="fa-solid fa-flag-checkered logo-icon" aria-hidden="true"></i> VCSOL
         </a>
         <button class="menu-toggle" aria-label="Otevřít menu" aria-expanded="false">
-          ☰
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
         </button>
         <nav class="nav">
           <a href="#about">O nás</a>
           <a href="#services">Služby</a>
           <a href="#why-us">Proč my</a>
           <a href="#projects">Realizace</a>
+          <a href="#gallery">Galerie</a>
           <a href="#process">Postup</a>
           <a href="#contact">Kontakt</a>
         </nav>
@@ -48,7 +118,9 @@
           <div class="page-hero-overlay"></div>
         </div>
         <div class="container page-hero-content">
-          <p class="eyebrow page-hero-eyebrow">🏁 Specialisté na historické automobily</p>
+          <p class="eyebrow page-hero-eyebrow">
+            <i class="fa-solid fa-flag-checkered" aria-hidden="true"></i> Specialisté na historické automobily
+          </p>
           <h1 class="page-hero-title">
             Kde se tradice<br />setkává s <span class="highlight">dokonalostí</span>
           </h1>
@@ -57,12 +129,16 @@
             Každý veterán má svůj příběh — my ho pomáháme dále psát.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">📞 Nezávazná konzultace</a>
-            <a class="btn btn-secondary" href="#projects">🏆 Naše realizace</a>
+            <a class="btn btn-primary" href="#contact">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i> Nezávazná konzultace
+            </a>
+            <a class="btn btn-secondary" href="#projects">
+              <i class="fa-solid fa-trophy" aria-hidden="true"></i> Naše realizace
+            </a>
           </div>
         </div>
-        <div class="page-hero-scroll">
-          <span>↓</span>
+        <div class="page-hero-scroll" role="button" aria-label="Přejít dolů" tabindex="0">
+          <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
         </div>
       </section>
 
@@ -70,31 +146,39 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-content" data-animate>
-            <p class="eyebrow">🔧 Renovace &amp; opravy veteránů</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-wrench" aria-hidden="true"></i> Renovace &amp; opravy veteránů
+            </p>
             <h1>Vdechneme nový život<br />vašemu <span class="highlight">klasickému vozu</span></h1>
             <p class="hero-text">
               Již více než 20 let se věnujeme profesionální renovaci a opravám historických automobilů.
               Každý veterán si zaslouží péči mistra — a to je přesně to, co nabízíme.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">📞 Nezávazná konzultace</a>
-              <a class="btn btn-secondary" href="#projects">🏆 Naše realizace</a>
+              <a class="btn btn-primary" href="#contact">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i> Nezávazná konzultace
+              </a>
+              <a class="btn btn-secondary" href="#projects">
+                <i class="fa-solid fa-trophy" aria-hidden="true"></i> Naše realizace
+              </a>
             </div>
           </div>
           <div class="hero-card" data-animate>
-            <div class="hero-card-icon">🚗</div>
+            <div class="hero-card-icon">
+              <i class="fa-solid fa-car" aria-hidden="true"></i>
+            </div>
             <h2>Co pro vás uděláme</h2>
             <ul>
-              <li>✅ Kompletní renovace karoserie i podvozku</li>
-              <li>✅ Repase motorů a převodovek</li>
-              <li>✅ Renovace interiérů do původního stavu</li>
-              <li>✅ Lakýrnické práce v originálních odstínech</li>
-              <li>✅ Příprava na veteránské přehlídky a soutěže</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Kompletní renovace karoserie i podvozku</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Repase motorů a převodovek</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Renovace interiérů do původního stavu</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Lakýrnické práce v originálních odstínech</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Příprava na veteránské přehlídky a soutěže</li>
             </ul>
           </div>
         </div>
         <div class="hero-scroll-hint">
-          <span>↓</span>
+          <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
         </div>
       </section>
 
@@ -124,7 +208,9 @@
       <section class="section" id="about">
         <div class="container about-grid">
           <div class="about-text" data-animate>
-            <p class="eyebrow">🏛️ O nás</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-landmark" aria-hidden="true"></i> O nás
+            </p>
             <h2>Tradice, řemeslo a vášeň pro veterány</h2>
             <p>
               Naše dílna se nachází v srdci České republiky a specializujeme se výhradně na
@@ -139,21 +225,27 @@
           </div>
           <div class="about-features" data-animate>
             <div class="feature-item">
-              <span class="feature-icon">🎯</span>
+              <span class="feature-icon">
+                <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+              </span>
               <div>
                 <h4>Precizní práce</h4>
                 <p>Každý detail musí sedět. Pracujeme s milimetrovou přesností.</p>
               </div>
             </div>
             <div class="feature-item">
-              <span class="feature-icon">🏅</span>
+              <span class="feature-icon">
+                <i class="fa-solid fa-medal" aria-hidden="true"></i>
+              </span>
               <div>
                 <h4>Certifikovaní odborníci</h4>
                 <p>Náš tým tvoří zkušení mechanici a karosáři s dlouholetou praxí.</p>
               </div>
             </div>
             <div class="feature-item">
-              <span class="feature-icon">💎</span>
+              <span class="feature-icon">
+                <i class="fa-solid fa-gem" aria-hidden="true"></i>
+              </span>
               <div>
                 <h4>Originální díly</h4>
                 <p>Používáme originální nebo věrně replikované náhradní díly.</p>
@@ -167,38 +259,40 @@
       <section class="section alt" id="services">
         <div class="container">
           <div class="section-header" data-animate>
-            <p class="eyebrow">🛠️ Naše služby</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Naše služby
+            </p>
             <h2>Kompletní péče o váš historický vůz</h2>
             <p class="section-subtitle">Od drobných oprav až po kompletní restaurování — postaráme se o vše.</p>
           </div>
           <div class="cards">
             <article class="card" data-animate>
-              <div class="card-icon">⚙️</div>
+              <div class="card-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
               <h3>Repase motorů</h3>
               <p>Kompletní renovace motorů včetně přebroušení klikových hřídelí, výměny pístních kroužků a seřízení ventilů.</p>
             </article>
             <article class="card" data-animate>
-              <div class="card-icon">🔩</div>
+              <div class="card-icon"><i class="fa-solid fa-car-burst" aria-hidden="true"></i></div>
               <h3>Opravy karoserií</h3>
               <p>Klempířské práce, svařování, rovnání plechů a opravy korozí s důrazem na zachování originálních tvarů.</p>
             </article>
             <article class="card" data-animate>
-              <div class="card-icon">🎨</div>
+              <div class="card-icon"><i class="fa-solid fa-paint-roller" aria-hidden="true"></i></div>
               <h3>Lakýrnické práce</h3>
               <p>Profesionální lakování v originálních odstínech s vícevrstvou technologií pro dokonalý lesk.</p>
             </article>
             <article class="card" data-animate>
-              <div class="card-icon">🪑</div>
+              <div class="card-icon"><i class="fa-solid fa-couch" aria-hidden="true"></i></div>
               <h3>Renovace interiérů</h3>
               <p>Čalounění sedadel, renovace palubních desek, obnova dřevěných obložení a originálních doplňků.</p>
             </article>
             <article class="card" data-animate>
-              <div class="card-icon">🔌</div>
+              <div class="card-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
               <h3>Elektroinstalace</h3>
               <p>Kompletní obnova kabeláže, opravy dynama, startérů a renovace originálních světlometů.</p>
             </article>
             <article class="card" data-animate>
-              <div class="card-icon">🏁</div>
+              <div class="card-icon"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></div>
               <h3>Příprava na soutěže</h3>
               <p>Komplexní příprava veteránů na přehlídky elegance, soutěže a veteránské jízdy spolehlivosti.</p>
             </article>
@@ -210,28 +304,30 @@
       <section class="section" id="why-us">
         <div class="container">
           <div class="section-header" data-animate>
-            <p class="eyebrow">⭐ Proč si vybrat nás</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-star" aria-hidden="true"></i> Proč si vybrat nás
+            </p>
             <h2>Co nás odlišuje od ostatních</h2>
           </div>
           <div class="why-grid">
             <div class="why-item" data-animate>
               <div class="why-number">01</div>
-              <h3>🔍 Odborná diagnostika</h3>
+              <h3><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Odborná diagnostika</h3>
               <p>Před každou renovací provedeme důkladnou prohlídku a vytvoříme detailní plán oprav s transparentní cenovou kalkulací.</p>
             </div>
             <div class="why-item" data-animate>
               <div class="why-number">02</div>
-              <h3>📸 Fotodokumentace</h3>
+              <h3><i class="fa-solid fa-camera" aria-hidden="true"></i> Fotodokumentace</h3>
               <p>Každý krok renovace pečlivě dokumentujeme. Získáte kompletní fotografickou historii obnovy vašeho vozu.</p>
             </div>
             <div class="why-item" data-animate>
               <div class="why-number">03</div>
-              <h3>🤝 Osobní přístup</h3>
+              <h3><i class="fa-solid fa-handshake" aria-hidden="true"></i> Osobní přístup</h3>
               <p>Každý vůz má svůj příběh. Nasloucháme vašim přáním a společně najdeme ideální cestu k dokonalému výsledku.</p>
             </div>
             <div class="why-item" data-animate>
               <div class="why-number">04</div>
-              <h3>🛡️ Záruka kvality</h3>
+              <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Záruka kvality</h3>
               <p>Na všechny provedené práce poskytujeme záruku. Vaše spokojenost je pro nás prioritou číslo jedna.</p>
             </div>
           </div>
@@ -242,26 +338,28 @@
       <section class="section alt" id="projects">
         <div class="container">
           <div class="section-header" data-animate>
-            <p class="eyebrow">🏆 Naše realizace</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-trophy" aria-hidden="true"></i> Naše realizace
+            </p>
             <h2>Vybrané renovace z naší dílny</h2>
             <p class="section-subtitle">Každý projekt je pro nás výzva a zároveň radost. Podívejte se na některé z našich prací.</p>
           </div>
           <div class="cards">
             <article class="card project-card" data-animate>
               <div class="project-badge">Kompletní renovace</div>
-              <div class="card-icon">🚗</div>
+              <div class="card-icon"><i class="fa-solid fa-car" aria-hidden="true"></i></div>
               <h3>Škoda Felicia 1960</h3>
               <p>Kompletní restaurování kabrioletu včetně renovace motoru, karoserie a interiéru do showroom stavu. Vůz získal cenu na Concours d'Élégance.</p>
             </article>
             <article class="card project-card" data-animate>
               <div class="project-badge">Repase motoru</div>
-              <div class="card-icon">🏎️</div>
+              <div class="card-icon"><i class="fa-solid fa-car-side" aria-hidden="true"></i></div>
               <h3>Tatra 87</h3>
               <p>Generální oprava vzduchového osmiválce, renovace karoserie a kompletní přečalounění interiéru v originální kůži.</p>
             </article>
             <article class="card project-card" data-animate>
               <div class="project-badge">Renovace</div>
-              <div class="card-icon">🚙</div>
+              <div class="card-icon"><i class="fa-solid fa-car" aria-hidden="true"></i></div>
               <h3>Praga Piccolo 1938</h3>
               <p>Záchrana vraku a kompletní obnova tohoto vzácného předválečného vozu. Dnes pýcha svého majitele na každé veteránské akci.</p>
             </article>
@@ -269,37 +367,110 @@
         </div>
       </section>
 
-      <!-- POSTUP -->
-      <section class="section" id="process">
+      <!-- GALERIE -->
+      <section class="section" id="gallery">
         <div class="container">
           <div class="section-header" data-animate>
-            <p class="eyebrow">📋 Jak pracujeme</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-images" aria-hidden="true"></i> Fotogalerie
+            </p>
+            <h2>Veteráni z naší dílny</h2>
+            <p class="section-subtitle">Sbírka fotografií historických vozidel, která prošla našima rukama.</p>
+          </div>
+          <div class="gallery-grid" data-animate>
+            <div class="gallery-item gallery-large">
+              <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80"
+                alt="Stříbrný klasický automobil — historický veterán"
+                loading="lazy"
+              />
+              <div class="gallery-overlay"><span>Klasický automobil</span></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+                alt="Červený vintage veterán — detailní pohled"
+                loading="lazy"
+              />
+              <div class="gallery-overlay"><span>Renovace exteriéru</span></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+                alt="Klasický vůz — pohled zepředu"
+                loading="lazy"
+              />
+              <div class="gallery-overlay"><span>Lakýrnické práce</span></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=800&q=80"
+                alt="Vintage automobil na silnici"
+                loading="lazy"
+              />
+              <div class="gallery-overlay"><span>Po renovaci</span></div>
+            </div>
+            <div class="gallery-item gallery-large">
+              <img
+                src="https://images.unsplash.com/photo-1566008885218-90abf9200ddb?auto=format&fit=crop&w=1200&q=80"
+                alt="Historický vůz — renovace v dílně"
+                loading="lazy"
+              />
+              <div class="gallery-overlay"><span>Renovace v dílně</span></div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80"
+                alt="Veterán na přehlídce elegance"
+                loading="lazy"
+              />
+              <div class="gallery-overlay"><span>Přehlídka veteránů</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POSTUP -->
+      <section class="section alt" id="process">
+        <div class="container">
+          <div class="section-header" data-animate>
+            <p class="eyebrow">
+              <i class="fa-solid fa-clipboard-list" aria-hidden="true"></i> Jak pracujeme
+            </p>
             <h2>Průběh renovace krok za krokem</h2>
           </div>
           <div class="process-timeline">
             <div class="process-step" data-animate>
-              <div class="step-icon">📞</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </div>
               <div class="step-content">
                 <h3>1. Konzultace</h3>
                 <p>Probereme vaše představy, prohlédneme vůz a navrhneme rozsah renovace.</p>
               </div>
             </div>
             <div class="process-step" data-animate>
-              <div class="step-icon">🔎</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              </div>
               <div class="step-content">
                 <h3>2. Diagnostika</h3>
                 <p>Důkladná prohlídka vozu, soupis potřebných oprav a cenová kalkulace.</p>
               </div>
             </div>
             <div class="process-step" data-animate>
-              <div class="step-icon">🔧</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-wrench" aria-hidden="true"></i>
+              </div>
               <div class="step-content">
                 <h3>3. Renovace</h3>
                 <p>Samotné práce na voze s průběžnou fotodokumentací a konzultacemi.</p>
               </div>
             </div>
             <div class="process-step" data-animate>
-              <div class="step-icon">✨</div>
+              <div class="step-icon">
+                <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+              </div>
               <div class="step-content">
                 <h3>4. Předání</h3>
                 <p>Finální kontrola kvality, zkušební jízda a slavnostní předání vašeho veterána.</p>
@@ -313,28 +484,30 @@
       <section class="section alt" id="contact">
         <div class="container">
           <div class="section-header" data-animate>
-            <p class="eyebrow">📬 Kontakt</p>
+            <p class="eyebrow">
+              <i class="fa-solid fa-envelope-open" aria-hidden="true"></i> Kontakt
+            </p>
             <h2>Ozvěte se nám</h2>
             <p class="section-subtitle">Máte veterána, který potřebuje péči? Neváhejte nás kontaktovat pro nezávaznou konzultaci.</p>
           </div>
           <div class="contact-grid">
             <div class="contact-card" data-animate>
-              <div class="contact-icon">📧</div>
+              <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
               <h3>E-mail</h3>
               <a href="mailto:info@vcsol.cz">info@vcsol.cz</a>
             </div>
             <div class="contact-card" data-animate>
-              <div class="contact-icon">📞</div>
+              <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
               <h3>Telefon</h3>
               <a href="tel:+420123456789">+420 123 456 789</a>
             </div>
             <div class="contact-card" data-animate>
-              <div class="contact-icon">📍</div>
+              <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
               <h3>Dílna</h3>
               <p>Průmyslová 42, Praha 5</p>
             </div>
             <div class="contact-card" data-animate>
-              <div class="contact-icon">🕐</div>
+              <div class="contact-icon"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
               <h3>Otevírací doba</h3>
               <p>Po–Pá: 8:00–17:00</p>
             </div>
@@ -346,17 +519,20 @@
     <footer class="footer">
       <div class="container footer-content">
         <div class="footer-brand">
-          <span class="logo"><span class="logo-icon">🏁</span> VCSOL</span>
+          <span class="logo">
+            <i class="fa-solid fa-flag-checkered logo-icon" aria-hidden="true"></i> VCSOL
+          </span>
           <p>Profesionální renovace a opravy historických veteránů.</p>
         </div>
         <div class="footer-links">
           <a href="#about">O nás</a>
           <a href="#services">Služby</a>
           <a href="#projects">Realizace</a>
+          <a href="#gallery">Galerie</a>
           <a href="#contact">Kontakt</a>
         </div>
         <div class="footer-copy">
-          <p>© <span id="year"></span> VCSOL. Všechna práva vyhrazena. 🚗</p>
+          <p>&copy; <span id="year"></span> VCSOL. Všechna práva vyhrazena. <i class="fa-solid fa-car" aria-hidden="true"></i></p>
         </div>
       </div>
     </footer>
